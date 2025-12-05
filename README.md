@@ -21,7 +21,8 @@ Además, se realiza una **aplicación real** filtrando un ECG con ruido eléctri
 
 | Archivo | Descripción |
 |---|---|
-| `practica_filtros.Rmd` | Informe completo con código, explicaciones y resultados |
+| `practica_filtros_digitales.Rmd` | Informe completo con código, explicaciones y resultados |
+| `practica_filtros_digitales.pdf` | PDF renderizado desde Rmd |
 | `ecg.mat` | ECG real contaminado por ruido de red |
 | `README.md` | Este documento |
 
@@ -57,4 +58,13 @@ Además, se realiza una **aplicación real** filtrando un ECG con ruido eléctri
 install.packages(c("signal","pracma","R.matlab"))
 
 # Ejecutar desde RStudio o R
-rmarkdown::render("practica_filtros.Rmd")
+rmarkdown::render("practica_filtros_digitales.Rmd")
+
+---
+
+## Resultados
+
+El informe en PDF (`practica_filtros_digitales.pdf`) contiene todas las figuras y resultados:
+- Respuesta en frecuencia de diferentes filtros
+- Diagramas de polos y ceros
+- Filtrado de un ECG real (antes y después del notch y del filtro pasa-altos)
